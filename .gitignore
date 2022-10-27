@@ -1,0 +1,17 @@
+# Skippa loggfiler
+*.log
+
+# Skippa configfiler för egna siter.
+config/apache2/sites-available/*.conf
+config/apache2/sites-enabled/*.conf
+
+# Undanta configfiler för exempelsiter
+!/config/apache2/sites-available/000-default.conf
+!/config/apache2/sites-enabled/000-default.conf
+!/config/apache2/sites-available/exempel.localhost.conf
+!/config/apache2/sites-enabled/exempel.localhost.conf
+
+html/
+
+!html/index.php
+!html/exempel/*.*

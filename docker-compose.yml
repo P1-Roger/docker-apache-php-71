@@ -1,0 +1,19 @@
+version: "3.1"
+services:
+  apache2-php-71:
+    build: docker/apache2-php71
+    container_name: docker-apache2-php71
+    volumes:
+      - ./html:/var/www/html/public
+      - ./config/apache2:/etc/apache2
+      - ./config/php:/usr/local/etc/php
+      - ./logs:/var/log/apache2
+    restart: always
+    ports:
+      - "8071:80"
+    networks:
+      - default
+
+networks:
+  default:
+    name: docker-net
