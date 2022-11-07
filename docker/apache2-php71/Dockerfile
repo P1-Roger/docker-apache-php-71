@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install -y \
   procps \
   sendmail \
   pngquant \
-  unzip \
-  zip \
   libpng-dev \
   libmcrypt-dev \
   git \
@@ -40,7 +38,6 @@ RUN docker-php-ext-install \
   dom \
   session \
   opcache \
-  soap \
   intl
 
 # Update web root to public

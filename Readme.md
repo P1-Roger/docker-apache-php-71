@@ -1,6 +1,6 @@
 # Apache2 PHP 7.1.19
 
-## Apache och PHP i lokal docker container
+## Apache och PHP 7.1.19 i lokal docker container så att du kan testa kompabilitet med FileMaker Server installerad php
 
 ## Installera Docker desktop på Mac
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
